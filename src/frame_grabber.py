@@ -4,7 +4,7 @@ Optimized with threading and frame buffering for continuous capture
 """
 
 import cv2
-from typing import Optional, Tuple
+from typing import Any, Optional, Tuple
 import logging
 from threading import Thread, Lock
 from queue import Queue, Full
@@ -98,7 +98,7 @@ class FrameGrabber:
                 logger.warning("Failed to read frame from video source")
                 time.sleep(0.01)  # Prevent busy waiting
     
-    def get_frame(self) -> Tuple[bool, Optional]:
+    def get_frame(self) -> Tuple[bool, Optional[Any]]:
         """
         Get the latest frame from the buffer
         

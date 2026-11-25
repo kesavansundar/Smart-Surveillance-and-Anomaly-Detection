@@ -15,6 +15,10 @@ from PyQt5.QtCore import Qt, QTimer, QThread, pyqtSignal
 from PyQt5.QtGui import QImage, QPixmap, QFont, QColor
 import numpy as np
 
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
+
 from src.orchestrator import SurveillanceOrchestrator
 from src.object_detector import Detection
 
