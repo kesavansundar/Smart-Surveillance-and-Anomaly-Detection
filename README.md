@@ -1,5 +1,7 @@
 # SmartSurveillance
 
+Final Year project PG
+
 Real-Time Automated Surveillance and Proactive Alert System using Deep Learning-Based Object Detection
 
 A comprehensive smart surveillance system that uses YOLOv8 deep learning model for real-time object detection, PyQt5 for an intuitive GUI, and automated email alerts for detected security threats.
